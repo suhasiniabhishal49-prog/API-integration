@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce page</title>
+    <script>
+    URL = "https://dummyjson.com/products"
+    fetch(URL)
+    .then(data => data.json())//json
+    .then(data => data.products)//object
+    .then(data => console.log(data))//array
+    document.getElementsByTagName("products").innerHTML = document.write("fetching data from api") 
+    
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
